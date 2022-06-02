@@ -18,6 +18,14 @@ module.exports = {
       'gray': '#bbc2cc',
       'alertColor': '#E63946'
     },
+    fontSize: {
+      'xs': '.75rem',
+      'sm': '.875rem',
+      'tiny': '.875rem',
+      'base': '1rem',
+      'lg': '1.8rem',
+      'xl': '2.25rem'
+    }
   },
   plugins: [],
 }

@@ -4,11 +4,7 @@ import { RouterLink, RouterView } from "vue-router";
 
 <template>
   <header>
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-      </nav>
-    </div>
+    <Navbar />
   </header>
 
   <RouterView />
@@ -16,5 +12,15 @@ import { RouterLink, RouterView } from "vue-router";
 
 <style>
 @import "@/assets/base.css";
-
 </style>
+
+<script>
+import Navbar from './components/Navbar.vue';
+
+export default {
+  name: "App",
+  components: {
+    Navbar
+  },
+};
+</script>

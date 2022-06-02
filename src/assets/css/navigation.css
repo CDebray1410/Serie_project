@@ -1,3 +1,4 @@
 .navigation {
     display: flex;
+    background-color: var(--tercaryColor);
 }
