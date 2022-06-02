@@ -1,4 +1,5 @@
 @import "./css/serie.css";
+@import "./css/show.css";
 @import "./css/navigation.css";
 
 :root {
@@ -26,7 +27,7 @@ body {
 }
 
 main {
-  width: 60%;
+  width: 65%;
   margin: auto;
   padding: 20px 15px;
 }
