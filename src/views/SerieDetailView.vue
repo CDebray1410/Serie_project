@@ -2,17 +2,20 @@
   <main>
     <h1 class="text-center text-xl">{{ show.title }}</h1>
     <section class="show_container flex flex-wrap">
-      <img :src="show.images.show" />
-      <p class="text-center">
-        {{ show.description }}
-      </p>
-      <div class="show__platforms">
-        <a v-for="platform in show.platforms.svods" :href="platform.link_url" :key="platform.id">
-          <img
-            :src="platform.logo"
-            class="show__platforms__logo"
-          />
-        </a>
+      <img :src="show.images.show" class="show_image" />
+      <div class="flex flex-wrap show_container_details">
+        <p class="show_container__description w-1/2">
+          {{ show.description }}
+        </p>
+        <div class="show__platforms w-1/2">
+          <p>Disponible sur :</p>
+          <a v-for="platform in show.platforms.svods" :href="platform.link_url" :key="platform.id">
+            <img
+              :src="platform.logo"
+              class="show__platforms__logo"
+            />
+          </a>
+        </div>
       </div>
       <div class="show__details">
         <div class="show__details__seasons">

@@ -1,3 +1,41 @@
 .show_container {
     
 }
+
+.show_container_details {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 15px;
+}
+.show_container .show_image {
+    box-shadow: 0px 0px 14px black;
+    border-radius: 15px;
+}
+.show_container__description {
+    margin-top: 30px;
+    line-height: 30px;
+}
+
+.show__platforms {
+    line-height: 30px;
+    margin-top: 30px;
+}
+.show__platforms img {
+    display: inline-block;
+}
+.show__platforms p {
+    margin-bottom: 10px;
+}
+
+.show__details {
+    width: 100%;
+    margin: 10px 0px;
+}
+.show__details__seasons {
+    margin: 10px 0px;
+}
+.show__platforms__logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+}

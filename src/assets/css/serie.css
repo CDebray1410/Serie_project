@@ -28,22 +28,3 @@
 .serie__overlay p:last-child {
     margin-top: 12px;
 }
-
-.show__platforms {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.show__details {
-    width: 100%;
-    margin: 20px 0px;
-}
-.show__details__seasons {
-    margin: 20px 0px;
-}
-.show__platforms__logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    border-radius: 10px;
-}
