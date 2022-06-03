@@ -4,17 +4,20 @@
     <section class="show_container flex">
       <SerieCardMd v-for="serie in shows.shows" :key="serie.id" :serie="serie" />
     </section>
+    <SerieDetailModal />
   </main>
 </template>
 
 <script>
 import SerieCardMd from '../components/serie/SerieCardMd.vue';
+import SerieDetailModal from '../components/serie/SerieDetailModal.vue';
 import axios from "axios";
 
 export default {
   name: "HomeView",
   components: {
     SerieCardMd,
+    SerieDetailModal
   },
   data() {
     return {

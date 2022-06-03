@@ -1,7 +1,6 @@
 .show_container {
-    
+    position: relative;
 }
-
 .show_container_details {
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
     padding-bottom: 15px;
