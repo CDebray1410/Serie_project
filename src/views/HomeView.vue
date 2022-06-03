@@ -335,17 +335,11 @@ export default {
     msg: String,
   },
   created() {
-    this.shows.shows.map(show => {
-      console.log(show)
-    });
     //this.getShowDiscovery();
   },
   methods: {
     getShowDiscovery: function () {
-      let fetchUrl =
-        import.meta.env.VITE_API_URL +
-        "shows/discover?limit=20&" +
-        import.meta.env.VITE_API_URL_INFOS;
+      let fetchUrl = `${import.meta.env.VITE_API_URL}shows/discover?limit=20&${import.meta.env.VITE_API_URL_INFOS}`
       const config = {
         headers: {
           "Access-Control-Allow-Origin": "*",
@@ -354,12 +348,10 @@ export default {
       axios
         .get(fetchUrl, config)
         .then((response) => {
-          console.log(response);
           this.shows = response.data.reverse();
         })
         .catch((error) => {
           this.errored = true;
-          console.log(error);
         })
         .finally(() => (this.loading = false));
     },
