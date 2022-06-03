@@ -14,8 +14,17 @@
           />
         </a>
       </div>
-      Nombre de saisons : {{ show.seasons }} <br/>
-      Nombre d'épisodes : {{ show.episodes }}
+      <div class="show__details">
+        <div class="show__details__seasons">
+          Nombre de saisons : {{ show.seasons }} <br/>
+          Nombre d'épisodes : {{ show.episodes }}
+        </div>
+        <ul class="show__details__genre">
+          <li v-for="genre in show.genres" :key="genre">
+            {{genre}}
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
 </template>
